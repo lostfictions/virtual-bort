@@ -5,7 +5,7 @@ module.exports = {
   devtool: 'cheap-module-eval-source-map',
   entry: [
     'react-hot-loader/patch',
-    'webpack-hot-middleware/client',
+    'webpack-hot-middleware/client?reload=true',
     './src/main.tsx'
   ],
   output: {
@@ -29,6 +29,10 @@ module.exports = {
           "awesome-typescript-loader"
         ],
         include: path.resolve(__dirname, "src")
+      },
+      {
+        test: /\.json$/,
+        loader: "json"
       }
     ]
   }
