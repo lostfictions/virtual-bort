@@ -1,0 +1,30 @@
+{
+  "name": "react-ts",
+  "version": "1.0.0",
+  "description": "",
+  "license": "GPL3",
+  "author": "sa",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "open": "chromium-browser --remote-debugging-port=9222 http://localhost:3000"
+  },
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-hot-loader": "^3.0.0-beta.6",
+    "react-redux": "^5.0.0-beta.3",
+    "redux": "^3.6.0"
+  },
+  "devDependencies": {
+    "@types/react": "^0.14.43",
+    "@types/react-dom": "^0.14.18",
+    "@types/webpack-env": "^1.12.1",
+    "awesome-typescript-loader": "^2.2.4",
+    "express": "^4.14.0",
+    "typescript": "^2.0.6",
+    "webpack": "^2.1.0-beta.25",
+    "webpack-dev-middleware": "^1.8.4",
+    "webpack-hot-middleware": "^2.13.0"
+  }
+}
